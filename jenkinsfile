@@ -27,7 +27,7 @@ pipeline {
         stage('InspeccionCodigoKiuwan') {
             steps {
                 // Analyze code with Kiuwan
-                //kiuwan connectionProfileUuid: 'KPQC-MGQJ', failureThreshold: 80.0, sourcePath: '/var/jenkins_home/workspace/Demo_pipeline_AktivGroup', unstableThreshold: 90.0
+                kiuwan connectionProfileUuid: 'KPQC-MGQJ', failureThreshold: 80.0, sourcePath: '/var/jenkins_home/workspace/Demo_pipeline_AktivGroup', unstableThreshold: 90.0
                 echo 'ADELANTE...'
                 
             }
