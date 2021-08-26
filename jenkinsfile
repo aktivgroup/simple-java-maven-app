@@ -67,7 +67,7 @@ pipeline {
         stage('Deploy_Prod') {
             steps {
                withEnv(['JENKINS_NODE_COOKIE=DontKillMe']) {
-                   sh "java -jar /var/jenkins_home/workspace/Demo_pipeline_AktivGroup/target/my-app-1.0-SNAPSHOT.jar"
+                   sh "java -jar /var/jenkins_home/workspace/Demo_pipeline_AktivGroup/target/my-app-1.1-SNAPSHOT.jar"
                }
             }
         }
